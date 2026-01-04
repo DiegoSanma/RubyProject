@@ -1,0 +1,428 @@
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 14:43:38 -0300
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Backend'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 2 pending migrations:
+
+db/migrate/20260104172825_create_users.rb
+db/migrate/20260104173221_create_friend_requests.rb
+
+
+):
+  
+activerecord (8.1.1) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.1) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 14:43:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 2 pending migrations:
+
+db/migrate/20260104172825_create_users.rb
+db/migrate/20260104173221_create_friend_requests.rb
+
+
+):
+  
+activerecord (8.1.1) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.1) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 14:43:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 2 pending migrations:
+
+db/migrate/20260104172825_create_users.rb
+db/migrate/20260104173221_create_friend_requests.rb
+
+
+):
+  
+activerecord (8.1.1) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.1) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started POST "/api/signup" for 127.0.0.1 at 2026-01-04 14:46:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 2 pending migrations:
+
+db/migrate/20260104172825_create_users.rb
+db/migrate/20260104173221_create_friend_requests.rb
+
+
+):
+  
+activerecord (8.1.1) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.1) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Backend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (6.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-01-04 17:47:16.470806', '2026-01-04 17:47:16.470808') RETURNING "key" /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Migrating to CreateUsers (20260104172825)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Backend'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "name" varchar, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260104172825') RETURNING "version" /*application='Backend'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Backend'*/[0m
+Migrating to CreateFriendRequests (20260104173221)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Backend'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "friend_requests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_id" integer NOT NULL, "receiver_id" integer NOT NULL, "status" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_9f6f8488d3"
+FOREIGN KEY ("sender_id")
+  REFERENCES "senders" ("id")
+, CONSTRAINT "fk_rails_099388ad25"
+FOREIGN KEY ("receiver_id")
+  REFERENCES "receivers" ("id")
+) /*application='Backend'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_friend_requests_on_sender_id" ON "friend_requests" ("sender_id") /*application='Backend'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_friend_requests_on_receiver_id" ON "friend_requests" ("receiver_id") /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260104173221') RETURNING "version" /*application='Backend'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Started POST "/api/signup" for 127.0.0.1 at 2026-01-04 14:47:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by AuthController#signup as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthController, action: signup, request: #<ActionDispatch::Request:0x00007fb0192155b8>, params: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]", "controller" => "auth", "action" => "signup", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]"}} }[0m
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'password_digest=' for an instance of User):
+  
+app/controllers/auth_controller.rb:4:in 'AuthController#signup'
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Migrating to AddPasswordDigestToUsers (20260104175415)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Backend'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260104175415') RETURNING "version" /*application='Backend'*/[0m
+  [1m[36mTRANSACTION (10.7ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Started POST "/api/signup" for 127.0.0.1 at 2026-01-04 14:55:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by AuthController#signup as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 21, "password_confirmation" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 21, "password_confirmation" => "[FILTERED]"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/diego/ProyectoCardda2/RubyProject/backend/app/models/user.rb:6: syntax errors found\n  \e[2m4 | \e[m\n  \e[2m5 | \e[m  validates :email, presence: true, uniqueness: true\n\e[1;31m> \e[m\e[2m6 | \e[m  validate :password presence: true, length: { minimum: 6 }, on: :create\n  \e[2m  | \e[m                     \e[1;31m^~~~~~~~\e[m unexpected local variable or method, expecting end-of-input\n  \e[2m  | \e[m                             \e[1;31m^\e[m unexpected ':', ignoring it\n  \e[2m  | \e[m                             \e[1;31m^\e[m unexpected ':', expecting end-of-input\n  \e[2m  | \e[m                                   \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                   \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                     \e[1;31m^~~~~~~\e[m unexpected label, ignoring it\n  \e[2m  | \e[m                                                           \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                                           \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                                             \e[1;31m^~~\e[m unexpected label, ignoring it\n  \e[2m7 | \e[m  validates_confirmation_of :password, on: :create\n  \e[2m8 | \e[m  validates :name, presence: true, uniqueness: true\n">)
+Caused by: SyntaxError (/home/diego/ProyectoCardda2/RubyProject/backend/app/models/user.rb:6: syntax errors found
+  [2m4 | [m
+  [2m5 | [m  validates :email, presence: true, uniqueness: true
+[1;31m> [m[2m6 | [m  validate :password presence: true, length: { minimum: 6 }, on: :create
+  [2m  | [m                     [1;31m^~~~~~~~[m unexpected local variable or method, expecting end-of-input
+  [2m  | [m                             [1;31m^[m unexpected ':', ignoring it
+  [2m  | [m                             [1;31m^[m unexpected ':', expecting end-of-input
+  [2m  | [m                                   [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                   [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                     [1;31m^~~~~~~[m unexpected label, ignoring it
+  [2m  | [m                                                           [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                                           [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                                             [1;31m^~~[m unexpected label, ignoring it
+  [2m7 | [m  validates_confirmation_of :password, on: :create
+  [2m8 | [m  validates :name, presence: true, uniqueness: true
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/diego/ProyectoCardda2/RubyProject/backend/app/models/user.rb:6: syntax errors found\n  \e[2m4 | \e[m\n  \e[2m5 | \e[m  validates :email, presence: true, uniqueness: true\n\e[1;31m> \e[m\e[2m6 | \e[m  validate :password presence: true, length: { minimum: 6 }, on: :create\n  \e[2m  | \e[m                     \e[1;31m^~~~~~~~\e[m unexpected local variable or method, expecting end-of-input\n  \e[2m  | \e[m                             \e[1;31m^\e[m unexpected ':', ignoring it\n  \e[2m  | \e[m                             \e[1;31m^\e[m unexpected ':', expecting end-of-input\n  \e[2m  | \e[m                                   \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                   \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                     \e[1;31m^~~~~~~\e[m unexpected label, ignoring it\n  \e[2m  | \e[m                                                           \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                                           \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                                             \e[1;31m^~~\e[m unexpected label, ignoring it\n  \e[2m7 | \e[m  validates_confirmation_of :password, on: :create\n  \e[2m8 | \e[m  validates :name, presence: true, uniqueness: true\n">):
+  
+activesupport (8.1.1) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/diego/ProyectoCardda2/RubyProject/backend/app/models/user.rb:6: syntax errors found
+  [2m4 | [m
+  [2m5 | [m  validates :email, presence: true, uniqueness: true
+[1;31m> [m[2m6 | [m  validate :password presence: true, length: { minimum: 6 }, on: :create
+  [2m  | [m                     [1;31m^~~~~~~~[m unexpected local variable or method, expecting end-of-input
+  [2m  | [m                             [1;31m^[m unexpected ':', ignoring it
+  [2m  | [m                             [1;31m^[m unexpected ':', expecting end-of-input
+  [2m  | [m                                   [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                   [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                     [1;31m^~~~~~~[m unexpected label, ignoring it
+  [2m  | [m                                                           [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                                           [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                                             [1;31m^~~[m unexpected label, ignoring it
+  [2m7 | [m  validates_confirmation_of :password, on: :create
+  [2m8 | [m  validates :name, presence: true, uniqueness: true
+):
+  
+app/models/user.rb:6: syntax errors found
+app/controllers/auth_controller.rb:4:in 'AuthController#signup'
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Started POST "/api/signup" for 127.0.0.1 at 2026-01-04 14:57:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by AuthController#signup as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthController, action: signup, request: #<ActionDispatch::Request:0x00007f76f7db8e98>, params: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]", "controller" => "auth", "action" => "signup", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'diegosanmaritnabarca@gmail.com' LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = 'DiegoSanma' LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+Completed 422 Unprocessable Content in 193ms (Views: 0.2ms | ActiveRecord: 2.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/signup" for 127.0.0.1 at 2026-01-04 14:57:34 -0300
+Processing by AuthController#signup as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthController, action: signup, request: #<ActionDispatch::Request:0x00007f76f700d988>, params: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]", "controller" => "auth", "action" => "signup", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "DiegoSanma", "age" => 22, "password_confirmation" => "[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'diegosanmaritnabarca@gmail.com' LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = 'DiegoSanma' LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "name", "age", "created_at", "updated_at", "password_digest") VALUES ('diegosanmaritnabarca@gmail.com', NULL, 'DiegoSanma', 22, '2026-01-04 17:57:34.221198', '2026-01-04 17:57:34.221198', '$2a$12$bJ5t.JKc9vQ358HyN0At4uGRRiV9iaueRRqvxoTPmyDoqZ9aRnkkq') RETURNING "id" /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+Completed 201 Created in 170ms (Views: 0.1ms | ActiveRecord: 8.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 14:58:30 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 14:58:38 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 14:58:50 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 14:58:59 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 14:59:30 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmarintaabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 14:59:34 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 14:59:50 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmaritnabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 159ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
