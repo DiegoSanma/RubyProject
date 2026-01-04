@@ -426,3 +426,24 @@ Processing by AuthController#login as */*
 Completed 200 OK in 159ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 15:06:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 15:14:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 15:15:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 15:29:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 15:37:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  

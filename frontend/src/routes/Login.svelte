@@ -32,10 +32,7 @@
 <h1>Login</h1>
 
 <input bind:value={email} placeholder="Email" />
-<input bind:value={name} placeholder="Name" />
-<input bind:value={age} type="number" placeholder="Age" />
 <input bind:value={password} type="password" />
-<input bind:value={passwordConfirmation} type="password" placeholder="Confirm Password" />
 
 <button on:click={login_user}>Login</button>
 
