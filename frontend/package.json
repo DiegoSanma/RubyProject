@@ -19,6 +19,7 @@
     "flowbite": "^4.0.1",
     "flowbite-svelte": "^1.31.0",
     "svelte-routing": "^2.13.0",
+    "svelte-spa-router": "^4.0.1",
     "tailwindcss": "^4.1.18"
   }
 }

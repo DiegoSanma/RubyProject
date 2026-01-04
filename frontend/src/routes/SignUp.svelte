@@ -26,6 +26,7 @@
     
         setToken(data.token)
         // aquí rediriges al dashboard
+        window.location.href = '/profile'
     }
 </script>
 
@@ -33,31 +34,33 @@
 {#if error}
     <p style="color: red;">{error}</p>
 {/if}
+<div class="flex with-full mt-10">
 <form on:submit|preventDefault={signup_user}>
     <label>
         Name:
-        <input type="text" bind:value={name} required />
+        <input type="text" bind:value={name} required placeholder="Username"/>
     </label>
     <br />
     <label>
         Email:
-        <input type="email" bind:value={email} required />
+        <input type="email" bind:value={email} required placeholder="Email"/>
     </label>
     <br />
     <label>
         Age:
-        <input type="number" bind:value={age} required />
+        <input type="number" bind:value={age} placeholder="Age" />
     </label>
     <br />
     <label>
         Password:
-        <input type="password" bind:value={password} required />
+        <input type="password" bind:value={password} required placeholder="Password"/>
     </label>
     <br />
     <label>
         Confirm Password:
-        <input type="password" bind:value={passwordConfirmation} required />
+        <input type="password" bind:value={passwordConfirmation} required placeholder="Confirm Password"/>
     </label>
     <br />
     <button type="submit">Sign Up</button>
 </form>
+</div>
