@@ -4,7 +4,7 @@ class ApplicationController < ActionController::API
 
   attr_reader :current_user
 
-  private
+  protected
 
   def authenticate_request
     header = request.headers['Authorization']

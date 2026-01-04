@@ -11,9 +11,13 @@ export function getFriendRequests() {
   return apiFetch('/api/friend_requests')
 }
 
+export function getFriendsList() {
+  return apiFetch('/api/friends')
+}
+
 export function respondFriendRequest(id, status) {
   return apiFetch(`/api/friend_requests/${id}`, {
-    method: 'PATCH',
+    method: 'PUT',
     body: JSON.stringify({ status })
   })
 }

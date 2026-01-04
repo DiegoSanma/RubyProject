@@ -877,3 +877,1410 @@ Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 16:52:49 -0300
   
 ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
   
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:54:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 197ms (Views: 0.3ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:54:59 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 16:55:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 16:55:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:11:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:11:45 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:12:44 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:12:44 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:12:46 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:12:46 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:15:13 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:15:14 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:16:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:16:43 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 17:17:30 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:17:32 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:17:32 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:18:57 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:18:57 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:23:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:23:49 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:23:49 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:23:49 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:01 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:14 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:14 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:14 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:14 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:18 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:18 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:18 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:18 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:18 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:18 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:19 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:20 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:20 -0300
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/friend_request.rb:2:in '<class:FriendRequest>'
+app/models/friend_request.rb:1:in '<main>'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:30 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found\n  \e[2m1 | \e[mclass FriendRequest < ApplicationRecord\n\e[1;31m> \e[m\e[2m2 | \e[m  enum :status { pending: 0, accepted: 1, declined: 2 }\n  \e[2m  | \e[m               \e[1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\e[m unexpected '{' after a method call without parenthesis\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', ignoring it\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', expecting end-of-input\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                             \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                          \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m3 | \e[m\n  \e[2m4 | \e[m  belongs_to :sender, class_name: 'User'\n">)
+Caused by: SyntaxError (/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found
+  [2m1 | [mclass FriendRequest < ApplicationRecord
+[1;31m> [m[2m2 | [m  enum :status { pending: 0, accepted: 1, declined: 2 }
+  [2m  | [m               [1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m unexpected '{' after a method call without parenthesis
+  [2m  | [m                        [1;31m^[m unexpected ':', ignoring it
+  [2m  | [m                        [1;31m^[m unexpected ':', expecting end-of-input
+  [2m  | [m                           [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                           [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                             [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                          [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m3 | [m
+  [2m4 | [m  belongs_to :sender, class_name: 'User'
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found\n  \e[2m1 | \e[mclass FriendRequest < ApplicationRecord\n\e[1;31m> \e[m\e[2m2 | \e[m  enum :status { pending: 0, accepted: 1, declined: 2 }\n  \e[2m  | \e[m               \e[1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\e[m unexpected '{' after a method call without parenthesis\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', ignoring it\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', expecting end-of-input\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                             \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                          \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m3 | \e[m\n  \e[2m4 | \e[m  belongs_to :sender, class_name: 'User'\n">):
+  
+activesupport (8.1.1) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found
+  [2m1 | [mclass FriendRequest < ApplicationRecord
+[1;31m> [m[2m2 | [m  enum :status { pending: 0, accepted: 1, declined: 2 }
+  [2m  | [m               [1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m unexpected '{' after a method call without parenthesis
+  [2m  | [m                        [1;31m^[m unexpected ':', ignoring it
+  [2m  | [m                        [1;31m^[m unexpected ':', expecting end-of-input
+  [2m  | [m                           [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                           [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                             [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                          [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m3 | [m
+  [2m4 | [m  belongs_to :sender, class_name: 'User'
+):
+  
+app/models/friend_request.rb:2: syntax errors found
+app/controllers/friends_controller.rb:3:in 'FriendsController#index'
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:30 -0300
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found\n  \e[2m1 | \e[mclass FriendRequest < ApplicationRecord\n\e[1;31m> \e[m\e[2m2 | \e[m  enum :status { pending: 0, accepted: 1, declined: 2 }\n  \e[2m  | \e[m               \e[1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\e[m unexpected '{' after a method call without parenthesis\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', ignoring it\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', expecting end-of-input\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                             \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                          \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m3 | \e[m\n  \e[2m4 | \e[m  belongs_to :sender, class_name: 'User'\n">)
+Caused by: SyntaxError (/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found
+  [2m1 | [mclass FriendRequest < ApplicationRecord
+[1;31m> [m[2m2 | [m  enum :status { pending: 0, accepted: 1, declined: 2 }
+  [2m  | [m               [1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m unexpected '{' after a method call without parenthesis
+  [2m  | [m                        [1;31m^[m unexpected ':', ignoring it
+  [2m  | [m                        [1;31m^[m unexpected ':', expecting end-of-input
+  [2m  | [m                           [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                           [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                             [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                          [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m3 | [m
+  [2m4 | [m  belongs_to :sender, class_name: 'User'
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found\n  \e[2m1 | \e[mclass FriendRequest < ApplicationRecord\n\e[1;31m> \e[m\e[2m2 | \e[m  enum :status { pending: 0, accepted: 1, declined: 2 }\n  \e[2m  | \e[m               \e[1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\e[m unexpected '{' after a method call without parenthesis\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', ignoring it\n  \e[2m  | \e[m                        \e[1;31m^\e[m unexpected ':', expecting end-of-input\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                           \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                             \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', ignoring it\n  \e[2m  | \e[m                                        \e[1;31m^\e[m unexpected ',', expecting end-of-input\n  \e[2m  | \e[m                                          \e[1;31m^~~~~~~~~\e[m unexpected label, ignoring it\n  \e[2m3 | \e[m\n  \e[2m4 | \e[m  belongs_to :sender, class_name: 'User'\n">):
+  
+activesupport (8.1.1) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/diego/ProyectoCardda2/RubyProject/backend/app/models/friend_request.rb:2: syntax errors found
+  [2m1 | [mclass FriendRequest < ApplicationRecord
+[1;31m> [m[2m2 | [m  enum :status { pending: 0, accepted: 1, declined: 2 }
+  [2m  | [m               [1;31m^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m unexpected '{' after a method call without parenthesis
+  [2m  | [m                        [1;31m^[m unexpected ':', ignoring it
+  [2m  | [m                        [1;31m^[m unexpected ':', expecting end-of-input
+  [2m  | [m                           [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                           [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                             [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', ignoring it
+  [2m  | [m                                        [1;31m^[m unexpected ',', expecting end-of-input
+  [2m  | [m                                          [1;31m^~~~~~~~~[m unexpected label, ignoring it
+  [2m3 | [m
+  [2m4 | [m  belongs_to :sender, class_name: 'User'
+):
+  
+app/models/friend_request.rb:2: syntax errors found
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 77ms (Views: 3.4ms | ActiveRecord: 1.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:40 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'authenticate_user!' for an instance of FriendRequestsController):
+  
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:96:in 'method_missing'
+activesupport (8.1.1) lib/active_support/callbacks.rb:362:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.1.1) lib/active_support/callbacks.rb:179:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:36:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.1.1) lib/active_support/callbacks.rb:180:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'Array#each'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:109:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:266:in 'AbstractController::Callbacks#process_action'
+actionpack (8.1.1) lib/action_controller/metal/rescue.rb:36:in 'ActionController::Rescue#process_action'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.1.1) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.1.1) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.1.1) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.1.1) lib/abstract_controller/base.rb:154:in 'AbstractController::Base#process'
+actionpack (8.1.1) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.1) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.4) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.4) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.4) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.1) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:25:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 1.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:25:50 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'authenticate_user!' for an instance of FriendRequestsController):
+  
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:96:in 'method_missing'
+activesupport (8.1.1) lib/active_support/callbacks.rb:362:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.1.1) lib/active_support/callbacks.rb:179:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:36:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.1.1) lib/active_support/callbacks.rb:180:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'Array#each'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:109:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:266:in 'AbstractController::Callbacks#process_action'
+actionpack (8.1.1) lib/action_controller/metal/rescue.rb:36:in 'ActionController::Rescue#process_action'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.1.1) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.1.1) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.1.1) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.1.1) lib/abstract_controller/base.rb:154:in 'AbstractController::Base#process'
+actionpack (8.1.1) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.1) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.4) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.4) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.4) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.1) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:26:38 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:26:38 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'authenticate_request!' for an instance of FriendRequestsController):
+  
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:96:in 'method_missing'
+activesupport (8.1.1) lib/active_support/callbacks.rb:362:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.1.1) lib/active_support/callbacks.rb:179:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:36:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.1.1) lib/active_support/callbacks.rb:180:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'Array#each'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:109:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:266:in 'AbstractController::Callbacks#process_action'
+actionpack (8.1.1) lib/action_controller/metal/rescue.rb:36:in 'ActionController::Rescue#process_action'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.1.1) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.1.1) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.1.1) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.1.1) lib/abstract_controller/base.rb:154:in 'AbstractController::Base#process'
+actionpack (8.1.1) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.1) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.4) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.4) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.4) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.1) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:27:44 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 13ms (Views: 1.2ms | ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:27:44 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'authenticate_request!' for an instance of FriendRequestsController):
+  
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:96:in 'method_missing'
+activesupport (8.1.1) lib/active_support/callbacks.rb:362:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.1.1) lib/active_support/callbacks.rb:179:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:36:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.1.1) lib/active_support/callbacks.rb:180:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'Array#each'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:109:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:266:in 'AbstractController::Callbacks#process_action'
+actionpack (8.1.1) lib/action_controller/metal/rescue.rb:36:in 'ActionController::Rescue#process_action'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.1.1) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.1.1) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.1.1) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.1.1) lib/abstract_controller/base.rb:154:in 'AbstractController::Base#process'
+actionpack (8.1.1) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.1) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.4) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.4) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.4) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.1) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:28:21 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:28:21 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:28:30 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:28:31 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'authenticate_request!' for an instance of FriendRequestsController):
+  
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:96:in 'method_missing'
+activesupport (8.1.1) lib/active_support/callbacks.rb:362:in 'block in ActiveSupport::Callbacks::CallTemplate::MethodCall#make_lambda'
+activesupport (8.1.1) lib/active_support/callbacks.rb:179:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:36:in 'block (2 levels) in <module:Callbacks>'
+activesupport (8.1.1) lib/active_support/callbacks.rb:180:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'Array#each'
+activesupport (8.1.1) lib/active_support/callbacks.rb:560:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.1.1) lib/active_support/callbacks.rb:109:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/abstract_controller/callbacks.rb:266:in 'AbstractController::Callbacks#process_action'
+actionpack (8.1.1) lib/action_controller/metal/rescue.rb:36:in 'ActionController::Rescue#process_action'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.1.1) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.1.1) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.1.1) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.1.1) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.1.1) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.1.1) lib/abstract_controller/base.rb:154:in 'AbstractController::Base#process'
+actionpack (8.1.1) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.1) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.1) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.1) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.1) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.4) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.4) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.4) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.1) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.1) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.4) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.1) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:28:35 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 14ms (Views: 1.4ms | ActiveRecord: 1.4ms (2 queries, 0 cached) | GC: 3.8ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:28:35 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 17:29:12 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:29:14 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:29:14 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:29:38 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:29:38 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:32:02 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:32:02 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:32:03 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 5.3ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:32:21 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:32:21 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:32:23 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:32:47 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:32:47 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:32:49 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:32:49 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.2ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:32:50 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:32:52 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:33:18 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:33:22 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:33:23 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:33:24 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:33:31 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 17:33:46 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:33:48 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:33:48 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:34:57 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:35:08 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:36:20 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:36:20 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:36:21 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:36:22 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/friend_requests"):
+  
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:36:46 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:42:05 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:42:18 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:42:37 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friends" for 127.0.0.1 at 2026-01-04 17:42:39 -0300
+Processing by FriendsController#index as */*
+  Parameters: {"friend" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "users".* FROM "users" INNER JOIN friend_requests ON (friend_requests.sender_id = users.id OR friend_requests.receiver_id = users.id AND friend_requests.status = 1) WHERE (friend_requests.status = 1 AND (friend_requests.sender_id = 2 OR friend_requests.receiver_id = 2 AND friend_requests.status = 1)) AND "users"."id" != 2 /*action='index',application='Backend',controller='friends'*/[0m
+  ↳ app/controllers/friends_controller.rb:8:in 'FriendsController#index'
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 17:42:39 -0300
+Processing by FriendRequestsController#index as */*
+  Parameters: {"friend_request" => {}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mFriendRequest Load (0.1ms)[0m  [1m[34mSELECT "friend_requests".* FROM "friend_requests" WHERE "friend_requests"."receiver_id" = 2 AND "friend_requests"."status" = 0 /*action='index',application='Backend',controller='friend_requests'*/[0m
+  ↳ app/controllers/friend_requests_controller.rb:20:in 'FriendRequestsController#index'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2026-01-04 17:48:29 -0300
+Processing by UserController#index as */*
+  Parameters: {"user" => {}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users"."id", "users"."name", "users"."email" FROM "users" /*action='index',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in 'UserController#index'
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+

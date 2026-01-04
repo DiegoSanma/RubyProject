@@ -1,5 +1,5 @@
 class FriendRequestsController < ApplicationController
-    before_action :authenticate_user!
+    before_action :authenticate_request
 
     def create
         receiver = User.find_by(id: params[:receiver_id])
@@ -38,4 +38,5 @@ class FriendRequestsController < ApplicationController
             render json: { error: "Invalid status." }, status: :unprocessable_entity
         end
     end
+
 end

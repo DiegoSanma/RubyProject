@@ -1,7 +1,8 @@
 <script>
   import { onMount } from 'svelte'
-  import { apiFetch } from '../lib/api'
   import { sendFriendRequest } from '../lib/friends'
+  import {apiFetch} from '../lib/api'
+  import { getAllUsersRelationships } from '../lib/users'
 
   let users = []
 
@@ -14,14 +15,16 @@
     await sendFriendRequest(id)
     alert('Friend request sent')
   }
+
+
 </script>
 
-<h1>Users</h1>
 
 <ul>
   {#each users as user}
     <li>
-      {user.email}
+      {user.name}
+
       <button on:click={() => addFriend(user.id)}>
         Add friend
       </button>
