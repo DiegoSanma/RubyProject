@@ -447,3 +447,171 @@ Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 15:37:35 -0300
   
 ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
   
+Started POST "/api/signup" for 127.0.0.1 at 2026-01-04 15:59:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by AuthController#signup as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "SanmaDiego", "age" => 22, "password_confirmation" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "SanmaDiego", "age" => 22, "password_confirmation" => "[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthController, action: signup, request: #<ActionDispatch::Request:0x00007f6d6b231d80>, params: {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "SanmaDiego", "age" => 22, "password_confirmation" => "[FILTERED]", "controller" => "auth", "action" => "signup", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]", "name" => "SanmaDiego", "age" => 22, "password_confirmation" => "[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = 'SanmaDiego' LIMIT 1 /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "name", "age", "created_at", "updated_at", "password_digest") VALUES ('diegosanmartinabarca@gmail.com', NULL, 'SanmaDiego', 22, '2026-01-04 18:59:56.796907', '2026-01-04 18:59:56.796907', '$2a$12$Z9Mg4NhOjLvBEk06lwTJbu3.pVOv/4Qrm33A/X53Ho93mllEPEC.W') RETURNING "id" /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+  [1m[36mTRANSACTION (9.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='signup',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:6:in 'AuthController#signup'
+Completed 201 Created in 205ms (Views: 0.5ms | ActiveRecord: 12.9ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:00:12 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 170ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:00:22 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 173ms (Views: 0.2ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:00:25 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 172ms (Views: 0.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:01:01 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 169ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:01:16 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 171ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:04:00 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 162ms (Views: 0.2ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:04:12 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 157ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:06:39 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarc@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:06:43 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 155ms (Views: 0.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:07:18 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 162ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:07:46 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 160ms (Views: 0.3ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:13:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 191ms (Views: 0.3ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:13:57 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 160ms (Views: 0.1ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:14:04 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 160ms (Views: 0.1ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:17:13 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+

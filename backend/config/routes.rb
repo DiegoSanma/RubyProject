@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post '/api/signup', to: 'auth#signup'
   post '/api/login',  to: 'auth#login'
   get '/api/users', to: 'user#index'
+  get 'api/me', to: 'user#me'
   resources :friend_requests, only: [:create, :index, :update]
 
 
