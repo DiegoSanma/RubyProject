@@ -6,6 +6,7 @@
   import Users from './routes/Users.svelte'
   import Navbar from './lib/Navbar.svelte'
   import Profile from './routes/Profile.svelte'
+  import SignOut from './routes/SignOut.svelte'
   import './app.css'
 </script>
 <Navbar />
@@ -24,5 +25,8 @@
   </Route>
   <Route path="/profile">
     <Profile />
+  </Route>
+  <Route path="/signout">
+    <SignOut />
   </Route>
 </Router>

@@ -750,3 +750,130 @@ Processing by UserController#me as */*
 Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:35:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:44:14 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 16:44:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:44:23 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:48:06 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:49:02 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 152ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:49:02 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:49:54 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 154ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:49:54 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:50:24 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 157ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:50:25 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:51:56 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 153ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:51:57 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:52:35 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 401 Unauthorized in 153ms (Views: 0.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2026-01-04 16:52:39 -0300
+Processing by AuthController#login as */*
+  Parameters: {"email" => "[FILTERED]", "password" => "[FILTERED]", "auth" => {"email" => "[FILTERED]", "password" => "[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'diegosanmartinabarca@gmail.com' LIMIT 1 /*action='login',application='Backend',controller='auth'*/[0m
+  ↳ app/controllers/auth_controller.rb:15:in 'AuthController#login'
+Completed 200 OK in 154ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:52:40 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2026-01-04 16:52:44 -0300
+Processing by UserController#me as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='me',application='Backend',controller='user'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in 'ApplicationController#authenticate_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/friend_requests" for 127.0.0.1 at 2026-01-04 16:52:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/friend_requests"):
+  

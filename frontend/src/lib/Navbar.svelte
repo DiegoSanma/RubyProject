@@ -1,3 +1,18 @@
+<script>
+  import 'flowbite'
+  import { isAuthenticated } from '../lib/auth'
+  import {onMount} from 'svelte'
+
+  let open=false
+  
+  onMount(() => {
+    if (isAuthenticated()) {
+      open = true
+    } else {
+      open = false
+    }
+  })
+</script>
 
 <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-default">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -12,9 +27,6 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
       <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
         <li>
-          <a href="/" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
-        </li>
-        <li>
             <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
               User 
               <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
@@ -22,18 +34,24 @@
           <!-- Dropdown menu -->
           <div id="dropdownNavbar" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
               <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
-                <li>
-                  <a href="/friend-requests" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
-                </li>
-                <li>
-                  <a href="/" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
-                </li>
-                <li>
-                  <a href="/" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
-                </li>
-                <li>
-                  <a href="/" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
-                </li>
+                {#if open}
+                  <li>
+                    <a href="/profile" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Profile</a>
+                  </li>
+                  <li>
+                    <a href="/friend-requests" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Friends</a>
+                  </li>
+                  <li>
+                    <a href="/signout" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                  </li>
+                {:else}
+                  <li>
+                    <a href="/login" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Login</a>
+                  </li>
+                  <li>
+                    <a href="/signup" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign Up</a>
+                  </li>
+                {/if}
               </ul>
           </div>
         </li>
