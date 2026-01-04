@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  side: MyString
+  type: 
+  health: 1
+  speed: 1
+
+two:
+  name: MyString
+  side: MyString
+  type: 
+  health: 1
+  speed: 1

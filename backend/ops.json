@@ -1,0 +1,87 @@
+
+{
+  "blitz": {
+    "name": "blitz",
+    "side": "attacker",
+    "roles": ["front line", "map control"],
+    "health": 2,
+    "speed": 2
+  },
+  "pulse": {
+    "name": "pulse",
+    "side": "defender",
+    "roles": ["intel", "support"],
+    "health": 1,
+    "speed": 3
+  },
+  "bandit": {
+    "name": "bandit",
+    "side": "defender",
+    "roles": ["anti-entry", "anti-gadget"],
+    "health": 1,
+    "speed": 3
+  },
+  "sledge": {
+    "name": "sledge",
+    "side": "attacker",
+    "roles": ["breach", "anti-gadget"],
+    "health": 2,
+    "speed": 2
+  },
+  "ash": {
+    "name": "ash",
+    "side": "attacker",
+    "roles": ["breach", "front line"],
+    "health": 1,
+    "speed": 3
+  },
+  "buck": {
+    "name": "buck",
+    "side": "attacker",
+    "roles": ["breach", "support"],
+    "health": 2,
+    "speed": 2
+  },
+  "goyo": {
+    "name": "goyo",
+    "side": "defender",
+    "roles": ["anti-entry", "trapper"],
+    "health": 2,
+    "speed": 2
+  },
+  "mira": {
+    "name": "mira",
+    "side": "defender",
+    "roles": ["intel", "support"],
+    "health": 3,
+    "speed": 1
+  },
+  "thermite": {
+    "name": "thermite",
+    "side": "attacker",
+    "roles": ["breach", "support"],
+    "health": 2,
+    "speed": 2
+  },
+  "castle": {
+    "name": "castle",
+    "side": "defender",
+    "roles": ["anti-entry", "support"],
+    "health": 2,
+    "speed": 2
+  },
+  "tachanka": {
+    "name": "tachanka",
+    "side": "defender",
+    "roles": ["crowd control", "anti-entry"],
+    "health": 3,
+    "speed": 1
+  },
+  "gridlock": {
+    "name": "gridlock",
+    "side": "attacker",
+    "roles": ["map control", "support"],
+    "health": 3,
+    "speed": 1
+  }
+}

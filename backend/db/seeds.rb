@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require "json"
+
+path = "ops.json"
+json = File.read(path)
+data = JSON.parse(json)
+
+data.each do |_key, attrs|
+  Operator.create!(attrs)
+end
+
